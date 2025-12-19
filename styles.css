@@ -1,3 +1,4 @@
+/* import font needed */
 @font-face {
     font-family: inter;
     src: url(Inter/Inter-VariableFont_opsz\,wght.ttf);
@@ -9,48 +10,61 @@
     box-sizing: border-box;
 }
 
-body{
+body {
     /* "inter" is defined as the typography for everything*/
-    font-family: inter; 
-    span{
+    font-family: inter;
+
+    /* change the color for all the 'span' inside the page */
+    span {
         color: #4CAF4F;
     }
-    p{
+
+    p {
         color: #717171;
     }
-    h1, h2, h3{
+
+    h1,
+    h2,
+    h3 {
         color: #4D4D4D;
     }
 }
+
 /* Header styles */
-header{
+header {
     display: flex;
     align-items: center;
     justify-content: space-around;
     padding: 1rem;
     background: #F5F7FA;
 }
-.logo{
+
+/* now the logo transform the cursor in a pointer */
+.logo {
     cursor: pointer;
 }
+
 /* nav-bar styles */
-.nav-bar ul{
+.nav-bar ul {
     display: flex;
     gap: 3em;
     list-style: none;
-    li{
+
+    li {
         cursor: pointer;
     }
 }
 
-.account-btns button{
+/* style for the buttons in the header section */
+.account-btns button {
     cursor: pointer;
     font-size: 1em;
     margin: 1em;
     background: none;
     border: none;
 }
-.account-btns .sing-btn{
+
+.account-btns .sing-btn {
     color: white;
     background: #4CAF4F;
     padding: 1em;
@@ -59,21 +73,25 @@ header{
 
 /* ======================================================hero section===========================================================*/
 
-.hero{
+.hero {
     background: #F5F7FA;
 }
-.hero-display{
+
+/* display hero in flexbox */
+.hero-display {
     display: flex;
     align-items: center;
     justify-content: space-around;
-
     padding: 3em 0;
     font-size: 2em;
 }
-.hero-display img{
+
+.hero-display img {
     max-width: 100%;
 }
-.text-side button{
+
+/* change the style of the button on the text-side */
+.text-side button {
     cursor: pointer;
     color: white;
     background: #4CAF4F;
@@ -81,199 +99,234 @@ header{
     border-radius: 0.5em;
     border: none;
 }
-.dots{
+
+/* dots */
+.dots {
     display: flex;
     gap: 1em;
     align-items: center;
     justify-content: center;
     padding: 1em;
 }
-.dots button{
-        height: 1em;
-        width: 1em;
-        background: #4caf4f85;
-        border-radius: 100%;
-        border: none;
-        cursor: pointer;
-    }
-.dots .selected{
-            background: #4caf4f;
-        }
+
+/* change the size and the color of the buttons */
+.dots button {
+    height: 1em;
+    width: 1em;
+    background: #4caf4f85;
+    border-radius: 100%;
+    border: none;
+    cursor: pointer;
+}
+
+/* The selected button is more visible */
+.dots .selected {
+    background: #4caf4f;
+}
 
 /* ======================================================client's section===========================================================*/
-
-.clients{
+.clients {
     text-align: center;
     margin: 2em;
-    h2{
+
+    h2 {
         font-size: 2em;
     }
-    p{
+
+    p {
         margin: 2em;
     }
 }
-.clients-display{
+
+/* display as a flexbot */
+.clients-display {
     margin: 3em;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
 }
-.cards-display{
+
+/* cards */
+.cards-display {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     margin: 3em 0;
 }
-.card{
+
+/* adjust the size of the cards */
+.card {
     max-width: 20%;
     box-shadow: 0 0 5px rgb(240, 240, 240);
     border-radius: 1em;
     padding: 3em;
     font-size: 1em;
 }
-/* "the-unseen" is a subsection added to clients because is very small */
-.the-unseen{
+
+/* "the-unseen" is a div added to clients because is very small */
+.the-unseen {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     margin: 3em 0;
-    .text-side{
+
+    .text-side {
         text-align: start;
         max-width: 40%;
-        p{
+
+        p {
             margin: 1em 0;
         }
     }
 }
-.the-unseen img{
+
+.the-unseen img {
     max-width: 100%;
 }
-/* ============================================the stat's section===================================================================== */
 
-.stats{
+/* ============================================the stat's section===================================================================== */
+.stats {
     display: flex;
     background: #F5F7FA;
     align-items: center;
     justify-content: space-evenly;
     padding: 3em 0;
+
     .text-side {
         font-size: 1.5em;
         max-width: 30%;
-        p{
+
+        p {
             font-size: 0.8em;
         }
     }
 }
+
 /* grid */
-.grid-stats{
+.grid-stats {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 3em;
 }
+
 /* style for every grid's spot */
-.grid-spot{
+.grid-spot {
     display: flex;
     gap: 0.1em;
 }
-/* ================================================="how-to section======================================================================== */
 
-.how-to{
+/* ================================================="how-to section======================================================================== */
+.how-to {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     padding: 2em 0;
-    .text-side{
+
+    .text-side {
         max-width: 40%;
-        p{
+
+        p {
             margin: 2em 0;
         }
     }
 }
-.how-to img{
+
+.how-to img {
     max-width: 100%;
 }
 
 /* =================================================comment section========================================================================== */
-.comment{
+.comment {
     display: flex;
     background: #F5F7FA;
     align-items: center;
     justify-content: space-evenly;
     padding: 3em;
-    .text-side{
+
+    .text-side {
         font-size: 1em;
         max-width: 40%;
-        span{
+
+        span {
             font-size: 1.5em;
-            
+
         }
-        .clients-display{
+
+        .clients-display {
             margin: 0;
             padding: 0;
             justify-content: space-around
         }
     }
 }
-.tesla{
+/* adjust the imagen's visibility */
+.tesla {
     border-radius: 20px;
     overflow: hidden;
     height: 25em;
     width: 30em;
 }
-.tesla img{
+
+.tesla img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
 /* =========================================blog section====================================================================== */
-
-.blog{
+.blog {
     text-align: center;
     margin: 3em;
     font-size: 1em;
 }
-.blog-container{
+
+.blog-container {
     width: 100%;
 }
-.blog-display{
+/* display as a flexbox */
+.blog-display {
     display: flex;
     align-items: start;
     justify-content: space-around;
     gap: 1em;
     width: 100%;
 }
-.blog-card img{
+/* adjustment about the images inside the blog */
+.blog-card img {
     margin-top: 3em;
     border-radius: 0.5em;
     max-width: 90%;
 }
-.blog-card div{
-    
+/* style add to the blog's info*/
+.blog-card div {
     margin-top: -1em;
     padding: 1em;
     font-size: 1em;
     border-radius: 0.5em;
     background: #F5F7FA;
     box-shadow: 0px 8px 16px 0px #ABBED166;
-    span{
+
+    span {
         cursor: pointer;
     }
 }
+
 /* ======================================================demo section=================================================== */
-.demo{
+.demo {
     margin-top: 2em;
     text-align: center;
     background: #F5F7FA;
     align-items: center;
     justify-content: center;
     padding: 2em;
-    h1{
+
+    h1 {
         font-size: 4em;
         max-width: 80%;
     }
-    button{
+
+    button {
         cursor: pointer;
         background: #4CAF4F;
         color: white;
@@ -297,7 +350,7 @@ header{
     align-items: center;
     gap: 3em;
 }
-
+/* socials */
 .socials {
     display: flex;
     gap: 1em;
@@ -306,13 +359,13 @@ header{
 }
 
 .socials img {
-    background: rgb(63, 63, 63);    
+    background: rgb(63, 63, 63);
     border-radius: 90%;
     cursor: pointer;
     height: 1em;
     width: 1em;
 }
-
+/* links */
 .footer-links {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -329,10 +382,12 @@ header{
     color: #ffffff;
     cursor: pointer;
 }
-.email{
+/* email */
+.email {
     display: flex;
     flex-direction: column;
 }
+/* imput */
 .input-box {
     display: flex;
     gap: 0.1em;
@@ -341,20 +396,23 @@ header{
     border-radius: 0.5em;
     padding: 0.5em 1em;
 }
-.input-box img{
+
+.input-box img {
     cursor: pointer;
 }
+
 .input-box p {
     margin-right: 10px;
 }
 
-.input-box input{
+.input-box input {
     max-width: 15em;
     width: 10em;
     border: none;
     background: rgb(139, 139, 139);
 }
-::placeholder{
+/* change the placeholder color */
+::placeholder {
     color: white;
 }
 
@@ -362,66 +420,78 @@ header{
 
 /* ================================================= Responsive for tablets (≤768px)========================================================== */
 
-@media (max-width:768px){
-    body{
+@media (max-width:768px) {
+    body {
         overflow-x: hidden;
     }
-    header{
-        .logo{
+    /* header */
+    header {
+        .logo {
             order: 1;
             flex: 1;
         }
-        .nav-bar{
+
+        .nav-bar {
             order: 2;
             position: relative;
-            
+
         }
+        /* add the icon before the nav-bar */
         .nav-bar::before {
-        content: '☰';
-        font-size: 24px;
-        cursor: pointer;
-        color: #000;
+            content: '☰';
+            font-size: 24px;
+            cursor: pointer;
+            color: #000;
         }
-        nav{
+        /* hide the nav-bar */
+        nav {
             display: none;
         }
-        .account-btns{
+
+        .account-btns {
             order: 3;
         }
     }
+
     /* responsive in hero section */
-    .hero-display{
+    .hero-display {
         display: flex;
-        flex-direction: column ;
+        flex-direction: column;
         gap: 1em;
     }
-    .text-side{
+
+    .text-side {
         text-align: center;
     }
 
     /* responsive in client section */
-    
-    .cards-display{
+
+    .cards-display {
         display: flex;
         flex-direction: column;
         gap: 1em;
     }
-    .card{
+
+    .card {
         padding: 1em;
         max-width: 90%;
     }
+
     /* "the-unseen" section */
-    .the-unseen{
+    .the-unseen {
         flex-direction: column;
-        .text-side{
+
+        .text-side {
             text-align: center;
             max-width: 99%;
         }
     }
+
     /* responsive in stats */
-    .stats{
+    .stats {
         flex-direction: column;
-        .text-side{
+
+        .text-side {
             text-align: center;
             max-width: 99%;
             margin-bottom: 2em;
@@ -429,71 +499,86 @@ header{
     }
 
     /* responsive in "how-to" */
-    .how-to{
+    .how-to {
         flex-direction: column;
-        .text-side{
+
+        .text-side {
             text-align: center;
             max-width: 99%;
         }
     }
 
     /* responsive in comment */
-    .comment{
+    .comment {
         padding: 1em;
         flex-direction: column;
-        .text-side{
+
+        .text-side {
             padding: 2em 0;
             text-align: justify;
             max-width: 99%;
-            .clients-display{
+
+            .clients-display {
                 margin-top: 1em;
-                span{
+
+                span {
                     grid-column: span 2;
                 }
             }
 
         }
     }
-    .comment .tesla{
+    /* hide the tesla imagen */
+    .comment .tesla {
         display: none;
-        
+
     }
+
     /* resonsive in blog */
-    .blog{
+    .blog {
         margin: 2em 0;
         padding: 1em;
     }
-    .blog-display{
+
+    .blog-display {
         overflow-x: scroll;
         padding-bottom: 2em;
     }
-    .blog-card img{
+
+    .blog-card img {
         max-width: 90%;
     }
+
     /* responsive for demo */
-    .demo{
-        h1{
+    .demo {
+        h1 {
             font-size: 2em;
         }
     }
+
     /* responsive for footer */
-    .footer{
+    .footer {
         flex-direction: column;
         padding: 1em;
     }
-    .footer-brand{
+
+    .footer-brand {
         padding: 1em;
-        .socials{
+
+        .socials {
             margin-top: 0.5em;
         }
     }
-    .footer-links h4{
+
+    .footer-links h4 {
         margin-bottom: 1em;
     }
-    .footer-links p{
+
+    .footer-links p {
         margin-bottom: 0.5em;
     }
-    .input-box{
+
+    .input-box {
         justify-content: space-around;
     }
 }
@@ -509,71 +594,84 @@ header{
 
 
 /* =================================================== Responsive for phone (≤ 480px) ======================================================== */
-@media (max-width: 480px){
-    body{
+@media (max-width: 480px) {
+    body {
         overflow-x: hidden;
     }
-    header{
-        .logo{
+
+    header {
+        .logo {
             order: 2;
             flex: 1;
         }
-        .nav-bar{
+        /* now the nav-bar show before the logo */
+        .nav-bar {
             order: 1;
             position: relative;
-            
+
         }
+
         .nav-bar::before {
-        content: '☰';
-        font-size: 24px;
-        cursor: pointer;
-        color: #000;
+            content: '☰';
+            font-size: 24px;
+            cursor: pointer;
+            color: #000;
         }
-        nav{
+
+        nav {
             display: none;
         }
-        .account-btns{
+
+        .account-btns {
             order: 3;
         }
     }
+
     /* responsive in hero section */
-    .hero-display{
+    .hero-display {
         display: flex;
-        flex-direction: column ;
+        flex-direction: column;
         gap: 1em;
     }
-    .text-side{
+
+    .text-side {
         text-align: center;
     }
 
     /* responsive in client section */
-    .clients-display{
+    .clients-display {
         display: grid;
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(2, 1fr);
         justify-items: center;
         gap: 1em;
     }
-    .cards-display{
+
+    .cards-display {
         display: flex;
         flex-direction: column;
         gap: 1em;
     }
-    .card{
+
+    .card {
         padding: 1em;
         max-width: 90%;
     }
+
     /* "the-unseen" section */
-    .the-unseen{
+    .the-unseen {
         flex-direction: column;
-        .text-side{
+
+        .text-side {
             text-align: center;
             max-width: 99%;
         }
     }
+
     /* responsive in stats */
-    .stats{
+    .stats {
         flex-direction: column;
-        .text-side{
+
+        .text-side {
             text-align: center;
             max-width: 99%;
             margin-bottom: 2em;
@@ -581,77 +679,94 @@ header{
     }
 
     /* responsive in "how-to" */
-    .how-to{
+    .how-to {
         flex-direction: column;
-        .text-side{
+
+        .text-side {
             text-align: center;
             max-width: 99%;
         }
     }
 
     /* responsive in comment */
-    .comment{
+    .comment {
         padding: 1em;
         flex-direction: column;
-        .text-side{
+
+        .text-side {
             padding: 2em 0;
             text-align: justify;
             max-width: 99%;
-            .clients-display{
+
+            .clients-display {
                 margin-top: 1em;
-                span{
+
+                span {
                     grid-column: span 2;
                 }
             }
 
         }
     }
-    .comment .tesla{
+
+    .comment .tesla {
         display: none;
-        
+
     }
+
     /* resonsive in blog */
-    .blog{
+    .blog {
         margin: 2em 0;
         padding: 1em;
     }
-    .blog-display{
+
+    .blog-display {
         overflow-x: scroll;
         padding-bottom: 2em;
     }
-    .blog-card img{
+
+    .blog-card img {
         max-width: 27em;
     }
+
     /* responsive for demo */
-    .demo{
-        h1{
+    .demo {
+        h1 {
             font-size: 2em;
         }
     }
+
     /* responsive for footer */
-    .footer{
+    .footer {
         flex-direction: column;
         padding: 1em;
     }
-    .footer-brand{
+
+    .footer-brand {
         padding: 1em;
-        .socials{
+
+        .socials {
             margin-top: 0.5em;
         }
     }
-    .footer-links{
-        grid-template-columns: repeat(2,1fr);
-        .email{
+
+    .footer-links {
+        grid-template-columns: repeat(2, 1fr);
+
+        .email {
             grid-column: span 2;
         }
     }
-    .footer-links h4{
+
+    .footer-links h4 {
         margin-bottom: 1em;
     }
-    .footer-links p{
+
+    .footer-links p {
         margin-bottom: 0.5em;
     }
-    .input-box{
+
+    .input-box {
         justify-content: space-around;
     }
 }

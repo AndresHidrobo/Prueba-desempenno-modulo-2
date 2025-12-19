@@ -8,4 +8,4 @@ Email: andresmhidroboe@gmail.com \
 N° document: 570486 
 # Used resources
 All resources like icons, imagens, etc. were taken directly from the figma page. \
-Font used in the activity is 'inter' and dowloaded from google fonts \
+Font used in the activity is 'inter' and dowloaded from google fonts 
